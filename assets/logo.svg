@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="VJN Academy">
+  <circle cx="60" cy="60" r="60" fill="#6B1F8A"/>
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 36 L58 88" stroke-width="9"/>
+    <path d="M82 36 L58 88" stroke-width="9"/>
+  </g>
+  <path
+    fill="#FFFFFF"
+    d="M86 34.5l1.4 2.8 3.1.45-2.25 2.2.45 3.1-2.75-1.45-2.75 1.45.45-3.1-2.25-2.2 3.1-.45z"
+  />
+</svg>

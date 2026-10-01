@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --sage: #9da79a;
+  --sage-deep: #6d7a6e;
+  --sage-floor: #adb0a2;
+  --slate: #5c1688;
+  --text: #ffffff;
+  --text-soft: rgba(255, 255, 255, 0.92);
+  --text-muted: rgba(255, 255, 255, 0.78);
+  --line: rgba(255, 255, 255, 0.42);
+  --line-soft: rgba(255, 255, 255, 0.3);
+  --gutter: clamp(20px, 8vw, 116px);
+  --ease-out: cubic-bezier(0.22, 0.68, 0.32, 1);
+  --ink: #1b1422;
+  --muted: #6b6274;
+  --paper: #f7f4ef;
+  --white: #fffcf8;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--sage-deep);
+    color: var(--text);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis-weight: none;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100svh;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--slate);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
